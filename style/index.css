@@ -8,7 +8,7 @@
 /* Nav */
 
 *{
-    border: solid thin lightgrey;
+    /* border: solid thin lightgrey; */
     font-family: 'Rubik', sans-serif;
 }
 
@@ -41,7 +41,7 @@ h1{
     display:flex;
     justify-content: center;
     padding: 3%;
-    height: %;
+    height: 3%;
 }
 .img {
     background: url(https://images.unsplash.com/photo-1617876028110-ce891295ac62?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
@@ -69,7 +69,8 @@ h2{
 .project-grid div{
     width: 15%;
     padding: 2%;
-    margin: 1%;
+    margin-bottom: 5%;
+    margin-top: 5%;
     height: 30vh;
 }
 
@@ -101,9 +102,11 @@ h2{
     background-position: center;
 }
 
-footer div{
+footer .get-in-touch{
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align:center;
 }
 .dm-button{
     border: 1px solid #4B4454;
@@ -116,4 +119,28 @@ footer div{
     font-family: 'Rubik', sans-serif;
     width: 5%;
     text-align: center;
+}
+
+.title-socials{
+    text-align: center;
+    margin: 1px 0;
+}
+
+.socials {
+    display:flex;
+    justify-content: center;
+}
+
+.ig-icon{
+    background: url(https://www.flaticon.es/svg/vstatic/svg/174/174855.svg?token=exp=1617934530~hmac=c7ad31f4e88973a21783684337a09d1c);
+    height: 4.1vh;
+    width: 2%;
+    margin: 2%;
+}
+
+.twitter-icon{
+    background: url(https://www.flaticon.es/svg/vstatic/svg/733/733579.svg?token=exp=1617934743~hmac=43215c9c920bfdeb22da85c3c3a035b9);
+    height: 4.1vh;
+    width: 2%;
+    margin: 2%;
 }
