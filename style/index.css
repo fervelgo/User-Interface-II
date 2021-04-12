@@ -1,1 +1,231 @@
-/* Add CSS styling here */
+
+/*font-family: 'Roboto Slab', serif;*/
+/*font-family: 'Rubik', sans-serif;*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: solid thin lightgrey;
+    max-width: 100%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Home Page*/
+/* Nav */
+h1, h2{
+    font-family: 'Roboto Slab', serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(255, 255, 255, .9);
+    margin-bottom: 1%;
+    width:100%;
+    z-index: 999;
+}
+
+nav div{
+    padding-top: .5%;
+}
+
+.link-box{
+    display:flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.top nav a{
+    border: 1px solid #4B4454;
+    border-radius: 10px;
+    padding: 2%;
+    color: white;
+    text-decoration: none;
+    background-color: #4B4454;
+    font-family: 'Rubik', sans-serif;
+}
+.about{
+    display:flex;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1614926037592-5d7aec4d5f8c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjE2fHxob3Jpem9udGFsJTIwd2FsbHBhcGVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 3%;
+    height: 100vh;
+}
+.about-info{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+    width: 40%;
+    margin: 2%;
+}
+.project-grid{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 1pz lightgrey;
+}
+.project-grid div{
+    width: 30%;
+    padding: 2%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    height: 50vh;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+#div1{
+    background: url(https://images.unsplash.com/photo-1617766644127-c051b41bcf73?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+#div2{
+    background: url(https://images.unsplash.com/photo-1617892262807-551053a8cfdf?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+#div3{
+    background: url(https://images.unsplash.com/photo-1617893772323-628d0a61a374?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+#div4{
+    background: url(https://images.unsplash.com/photo-1617855646684-085084b44be9?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5NHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+footer .get-in-touch{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align:center;
+}
+.dm-button{
+    border: 1px solid #4B4454;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #4B4454;
+    font-family: 'Rubik', sans-serif;
+    width: 15%;
+    text-align: center;
+}
+
+.title-socials{
+    text-align: center;
+    margin: 1px 0;
+}
+
+.socials {
+    display:flex;
+    justify-content: center;
+}
+
+.ig-icon{
+    background: url(https://www.flaticon.es/svg/vstatic/svg/174/174855.svg?token=exp=1617934530~hmac=c7ad31f4e88973a21783684337a09d1c);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 7%;
+    margin: 2%;
+    height: 5vh;
+}
+
+.twitter-icon{
+    background: url(https://www.flaticon.es/svg/vstatic/svg/733/733579.svg?token=exp=1617934743~hmac=43215c9c920bfdeb22da85c3c3a035b9);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 10%;
+    margin: 2%;
+}
+
+/*Responsive Styles*/
+
+@media(max-width: 800px){
+    .link-box {
+        width: 60%;
+    }
+    .dm-button{
+        width:20%;
+    }
+    .project-grid div {
+        height: 30vh;
+    }
+}
+
+@media(max-width: 500px){
+    .link-box {
+        width: 80%;
+    }
+    .dm-button{
+        width:30%;
+    }
+    .project-grid div {
+        height: 20vh;
+    }
+
+}
