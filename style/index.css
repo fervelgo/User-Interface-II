@@ -1,37 +1,94 @@
-/* Add CSS styling here */
 
 /*font-family: 'Roboto Slab', serif;*/
 /*font-family: 'Rubik', sans-serif;*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/* Home Page*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
 
-/* Nav */
 
-*{
-    /* border: solid thin lightgrey; */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: solid thin lightgrey;
+    max-width: 100%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
     font-family: 'Rubik', sans-serif;
 }
 
-.top {
-    
-}
-
+/* Home Page*/
+/* Nav */
 h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Roboto Slab', serif;
-    margin-left: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(255, 255, 255, .9);
+    margin-bottom: 1%;
+    width:100%;
+    z-index: 999;
 }
 
-.top nav{
-    display:flex;
-    justify-content: flex-start;
+nav div{
+    padding-top: .5%;
+}
 
+.link-box{
+    display:flex;
+    justify-content: space-around;
+    width: 40%;
 }
 
 .top nav a{
     border: 1px solid #4B4454;
-    border-radius: 10%;
-    padding: 10px;
-    margin: 10px;
+    border-radius: 1%;
+    padding: 2%;
     color: white;
     text-decoration: none;
     background-color: #4B4454;
@@ -40,16 +97,20 @@ h1{
 .about{
     display:flex;
     justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1614926037592-5d7aec4d5f8c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjE2fHxob3Jpem9udGFsJTIwd2FsbHBhcGVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     padding: 3%;
-    height: 3%;
-}
-.img {
-    background: url(https://images.unsplash.com/photo-1617876028110-ce891295ac62?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
-    width: 25%;
-    height: 35vh;
-    margin:2%;
+    height: 100vh;
 }
 .about-info{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
     width: 40%;
     margin: 2%;
 }
@@ -67,11 +128,13 @@ h2{
 }
 
 .project-grid div{
-    width: 15%;
+    width: 30%;
     padding: 2%;
     margin-bottom: 5%;
     margin-top: 5%;
-    height: 30vh;
+    height: 50vh;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #div1{
@@ -133,14 +196,28 @@ footer .get-in-touch{
 
 .ig-icon{
     background: url(https://www.flaticon.es/svg/vstatic/svg/174/174855.svg?token=exp=1617934530~hmac=c7ad31f4e88973a21783684337a09d1c);
-    height: 4.1vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 2%;
     margin: 2%;
 }
 
 .twitter-icon{
     background: url(https://www.flaticon.es/svg/vstatic/svg/733/733579.svg?token=exp=1617934743~hmac=43215c9c920bfdeb22da85c3c3a035b9);
-    height: 4.1vh;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 2%;
     margin: 2%;
+}
+
+/*Responsive Styles*/
+
+@media(max-width: 500px){
+    .link-box {
+        width: 80%;
+    }
+    .dm-button{
+        width:22%;
+    }
 }
