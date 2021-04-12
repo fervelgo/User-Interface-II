@@ -133,8 +133,8 @@ h2{
     margin-bottom: 5%;
     margin-top: 5%;
     height: 50vh;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 #div1{
@@ -198,16 +198,18 @@ footer .get-in-touch{
     background: url(https://www.flaticon.es/svg/vstatic/svg/174/174855.svg?token=exp=1617934530~hmac=c7ad31f4e88973a21783684337a09d1c);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 2%;
+    background-size: auto;
+    width: 7%;
     margin: 2%;
+    height: 5vh;
 }
 
 .twitter-icon{
     background: url(https://www.flaticon.es/svg/vstatic/svg/733/733579.svg?token=exp=1617934743~hmac=43215c9c920bfdeb22da85c3c3a035b9);
     background-position: center;
     background-repeat: no-repeat;
-    width: 2%;
+    background-size: auto;
+    width: 10%;
     margin: 2%;
 }
 
@@ -220,4 +222,8 @@ footer .get-in-touch{
     .dm-button{
         width:22%;
     }
+    .project-grid div {
+        height: 20vh;
+    }
+
 }
